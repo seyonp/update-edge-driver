@@ -1,4 +1,13 @@
 # Update Edge WebDriver
+
+## VBS file
+Set objExcel = CreateObject("Excel.Application")
+objExcel.Application.Run "'C:\Users\MSDemo\Desktop\Edge WebDriver\edge-webdriver-update - Copy.xlsm'!Module1.UpdateEdgeWebDriver"
+objExcel.DisplayAlerts = False
+objExcel.Application.Quit
+Set objExcel = Nothing
+
+## Macro code
 'Attribute VB_Name = "WebDriverManager4SeleniumBasic"
 
 '0) Download exe for Selenium Basic library installation: https://github.com/florentbr/SeleniumBasic/releases/tag/v2.0.9.0
